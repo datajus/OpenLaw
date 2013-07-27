@@ -1,0 +1,41 @@
+
+
+
+What informationt will the repository store? 
+how it is organized? and,
+how do you access the data?
+
+
+
+What will be stored:
+
+The repository will store the law "related" data of the United States including.
+
+* i Law - the written laws of each state and federal governmemt.
+
+* Case Law -  The court decisions of each state's highest court and the US supreme court and 
+federal appellate districts.
+
+* Secondary-
+  1. Briefs: Legal arguments and briefs that are openly available in electronic format and in the public domain.
+  2. Legal dictionaries and references that are in the public doamin
+  
+
+How is it stored.
+
+Each case law (court decision) and secondary reference will be stored as a single document or file.
+
+Each jurisdiction's codified law will be divided and stored by what is commonly refered to as "title".  
+This divides those laws
+into 100-300 seperate documents each containing a set of related laws.
+Each title will be its own document or file.
+
+Some jursidictions do not break up their laws into titles.  These will be handled case-by-case.  
+
+General policy is to break the 
+statues up into a) related groups b) that are large enough to take advantage of hadoop storage.
+
+
+
+
+
