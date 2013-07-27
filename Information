@@ -1,6 +1,5 @@
 
 
-
 What informationt will the repository store? 
 how it is organized? and,
 how do you access the data?
@@ -34,6 +33,43 @@ Some jursidictions do not break up their laws into titles.  These will be handle
 
 General policy is to break the 
 statues up into a) related groups b) that are large enough to take advantage of hadoop storage.
+
+
+
+File Name Convention
+
+Type
+TYPE:=
+  CODE
+  CASE
+
+Sub -further breakdown of the type, i.e civil or criminal
+
+
+Jurisdiction
+JJ:=  
+  US
+  ST := MA NY NH CA
+
+TT
+  
+EXNT:=
+  HML
+  TXT
+  XML
+  JSN
+  
+  
+ZIP
+
+Format:     TYPE.SUB.JJ.YEAR.TT.ST.EXT.MEMOCCCC.ZIP
+Picture     CCCC.CCC.CC.9999.99.00.CCC.CCCCCCCC.CCC
+Example:    CODE.ALL.US.2010.23.00.HTM.gzp
+            CODE.CVL.CA.2011.15.01.XML.gzp
+            
+            
+            
+  
 
 
 
