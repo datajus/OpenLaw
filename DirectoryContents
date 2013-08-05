@@ -1,0 +1,106 @@
+
+
+Datajus repository is (will be) a consolidated location for all the 
+laws of the USA.
+
+The System Contains
+   
+    CODEs
+    CASE Law
+    CONSTitutions
+    BRIEFS
+    SECONdary
+    
+    
+
+File Name Convention:
+
+
+Format:    A.1.JD.SJD.T.2012.aaaaa.bbbbbb.EXT.ZIP
+Example:   C.1.MA.xxx.x.2012.00209.00027A.XML.ZIP
+
+
+
+Description of file Name Convention:
+
+
+    A:  (1 char) Law Type Code
+
+      C   Code, legeistaltive law
+      S   Case LAw (Stare Decisis). Decisions of the Court
+      B   Briefs, legal argumetn files with court (also memos) 
+      U   Constitutions (universal law), each state and US
+        
+
+    1: (1 nuneric) Level, idicate legal authority of the document.
+        
+      0   All us, onlly for US Constitution and international treaty
+      1   US 
+      2   Federal Appellate District
+      3   State
+      4   Federal District
+      5   County
+      6   City
+   
+   
+    JD: (2 char) Jurisdiction- US or 2 state code
+    
+      Ex. MA, US
+   
+    SJD: (3 char) Sub Jurisdiction   
+   
+   
+    T: (1 char):  Sub "LAw Type" (Reserved)
+    
+      Reserved for special cases where two coded
+      
+      
+      
+    aaaaa: (5 char)  Document Identifier level 1
+    
+    
+    bbbbb: (5 char)  Document Identifier level 2
+   
+    
+    EXT:  (3 char) File Extention
+    
+      HML
+      TXT
+      XML
+      JSN
+  
+    ZIP:  Compression  
+      
+
+
+Directory Structure
+
+
+Pub/
+
+  CODE/
+      Directory each jurisdiction      
+  CASE/
+      Directory each jurisdiction
+  BRIEF/
+      Directory each jurisdiction
+  CONST/
+      All files under 1 dir
+  REFER/
+      All files under 1 dir
+
+Current Contents:
+
+    CODE
+
+      US 1994 - 2012
+      AR 2012
+      VA 2012
+      FL 2012
+      GA 2012
+      MI 2010
+
+
+
+
+
