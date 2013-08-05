@@ -1,10 +1,11 @@
-Datajus repository is (will be) a consolidated location for all the 
-laws of the USA.
+Datajus repository is (will be) a consolidated location 
+for all the laws of the USA.
 
-The System Contains
+
+The System Contains:
    
-    CODEs  - divided into 1 doc per chapter (100-300 docs each jurisdiction)
-    CASE Law  - 1 doc per case (dissents seperate)
+    CODEs  - Laws. Divided into 1 doc per chapter (100-300 docs each jurisdiction)
+    CASE Law  - Court Decisions. 1 doc per case (dissents seperate)
     CONSTitutions -  1 doc per jurisdiction
     BRIEFS - 1 doc per brief
     SECONdary - varies
@@ -23,7 +24,7 @@ Description of file Name Convention:
 
 
     A:  (1 char) Law Type Code
-
+     Required
       C   Code, legeistaltive law
       S   Case LAw (Stare Decisis). Decisions of the Court
       B   Briefs, legal argumetn files with court (also memos) 
@@ -31,44 +32,47 @@ Description of file Name Convention:
         
 
     1: (1 nuneric) Level, idicate legal authority of the document.
-        
+     Required     
       0   All us, onlly for US Constitution and international treaty
       1   US 
       2   Federal Appellate District
       3   State
-      4   Federal District
-      5   County
-      6   City
-   
+      4   Federal Trial District
+      6   County
+      8   City
+      9   Reserved
+      
    
     JD: (2 char) Jurisdiction- US or 2 state code
-    
+     Required
       Ex. MA, US
    
     SJD: (3 char) Sub Jurisdiction   
-   
+     (Optional)
    
     T: (1 char):  Sub "LAw Type" (Reserved)
-    
-      Reserved for special cases where two coded
+     (Optional)
+      Reserved for special cases where jurisdiction has two equal
+      seperate published coded.
       
-      
-      
+            
     aaaaa: (5 char)  Document Identifier level 1
-    
+     (Optional)
     
     bbbbb: (5 char)  Document Identifier level 2
-   
+     (Optional)
     
     EXT:  (3 char) File Extention
-    
+     Required
       HML
       TXT
       XML
       JSN
   
     ZIP:  Compression  
-      
+      (optional)
+      Compressed file, if file is not compressed this is absent.  The only 
+      portion of the file name that does nto have a place holder
 
 
 Directory Structure
