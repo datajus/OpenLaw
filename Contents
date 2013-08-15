@@ -1,5 +1,5 @@
 Datajus repository is (will be) a consolidated location 
-for all the laws of the USA.
+for all the laws (code and case) from the US
 
 
 The System Contains:
@@ -10,13 +10,14 @@ The System Contains:
     BRIEFS - 1 doc per brief
     SECONdary - varies
     
-    
+-----------------------------------------------------------------
+
 
 File Name Convention:
 
 
-Format:    A.1.JD.SJD.T.2012.aaaaa.bbbbbb.EXT.ZIP
-Example:   C.1.MA.xxx.x.2012.00209.00027A.XML.ZIP
+Format:    A.1.JD.SJD.T.2012.aaaaa.bbbbbb.EXT.TAR.ZIP
+Example:   C.1.MA.xxx.x.2012.00209.00027A.XML.TAR.ZIP
 
 
 
@@ -31,9 +32,9 @@ Description of file Name Convention:
       U   Constitutions (universal law), each state and US
         
 
-    1: (1 nuneric) Level, idicate legal authority of the document.
+    1: (1 nuneric) Level, idicate legal authority of the doc.
      Required     
-      0   All us, onlly for US Constitution and international treaty
+      0   All us, onlly for US Constitution and int'l treaty
       1   US 
       2   Federal Appellate District
       3   State
@@ -58,9 +59,18 @@ Description of file Name Convention:
             
     aaaaa: (5 char)  Document Identifier level 1
      (Optional)
+     Defaults:
+       if field is in use default with 0 if numeric otherwise x
+       This supports better ascii ordering
     
     bbbbb: (5 char)  Document Identifier level 2
      (Optional)
+     if field is nto used default to x, otherwise use default
+     policy from level 1.  Support better ascii ordering
+    
+    Purpose level 1 and 2 is to files ascii order is the same
+      as the ordering of the contents in their official
+      publication
     
     EXT:  (3 char) File Extention
      Required
@@ -68,12 +78,17 @@ Description of file Name Convention:
       TXT
       XML
       JSN
+      RTF
   
     ZIP:  Compression  
       (optional)
       Compressed file, if file is not compressed this is absent.  The only 
       portion of the file name that does nto have a place holder
 
+    TAR: Tape ARchive - multiple Files
+      (optional)
+    
+-----------------------------------------------------------------
 
 Directory Structure
 
@@ -91,6 +106,8 @@ Pub/
   REFER/
       All files under 1 dir
 
+
+-----------------------------------------------------------------
 Current Contents:
 
     CODE
@@ -101,11 +118,29 @@ Current Contents:
       FL 2012
       GA 2012
       MI 2010
+      MA 2012
+      TX 2012
+      
+   CASE
+
+-----------------------------------------------------------------
+FILE FORMATS:
+
+  Code:
+
+-----------------------------------------------------------------
+Data Flow:
+
+  Code/Law
+       1. Laws Downloaded
+       2. uplaoded into statedecoded format database
+       3. files extracted
+          1 file per chapter
+          2 single fiel with all code for a given edition year
+  Case Law
 
 
-File Format:
 
+-----------------------------------------------------------------
 
-
-
-
+Abbrevations:
